@@ -1,0 +1,11 @@
+[
+    { "name": "camry", "src": "/assets/camry.png" },
+    { "name": "Corolla Altis", "src": "/assets/corolla_altis.png" },
+    { "name": "Dezire", "src": "/assets/dezire.png" },
+    { "name": "Etios", "src": "/assets/etios.png" },
+    { "name": "Indigo", "src": "/assets/indigo.png" },
+    { "name": "Innova", "src": "/assets/innova.png" },
+    { "name": "Luxury buses", "src": "/assets/luxury_buses.png" },
+    { "name": "Mercedes", "src": "/assets/mercedes.png" }
+  ]
+  

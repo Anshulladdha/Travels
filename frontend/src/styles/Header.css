@@ -1,0 +1,65 @@
+body {
+  text-align: justify;
+}
+.top-bar {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* padding: 10px 30px; */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height:80px;
+}
+
+.brand-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #ff6600;
+}

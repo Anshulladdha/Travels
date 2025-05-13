@@ -1,0 +1,29 @@
+.footer{
+  width: 100%;
+  color:white;
+  padding-top:10px;
+
+  background:black;
+  
+}
+  
+.footer a{
+  text-decoration: none;
+  padding:10px;
+  color: white;
+  font-size: 18px;
+        
+
+}
+.footer h2{
+  color: white;
+  padding-bottom: 10px;
+  
+  
+}
+.footer a:hover{
+  color:white;
+  border-bottom:0.5px solid;
+  padding: 1px;
+}
+
