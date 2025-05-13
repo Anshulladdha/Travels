@@ -4,7 +4,7 @@
   "main": "server.mjs",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon src/server.mjs"
+    "start": "node src/server.mjs"
   },
   "type": "module",
   "keywords": [],
