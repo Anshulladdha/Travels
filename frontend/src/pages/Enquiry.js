@@ -10,7 +10,7 @@ const Enquiry = () => {
     subject: "",
     message: "",
   });
-
+const backendURL = "https://travels-1-zuku.onrender.com";
   // Handle input field changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -23,9 +23,11 @@ const Enquiry = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+      console.log("API URL:", process.env.REACT_APP_BASE_URL); 
 
     try {
       // Send form data to the backend API
+     
       const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/enquiry`, {
         method: "POST",
         headers: {
