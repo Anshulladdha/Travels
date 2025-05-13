@@ -6,7 +6,9 @@ const envConfig = () => {
         override: true
     });
 
-    return res.parsed
+    return{
+        DB_URL: process.env.DB_URL,
+    };
 };
 
 export default envConfig;
