@@ -19,7 +19,7 @@ const app = express();
 
 // ✅ CORS Setup (must be before routes)
 app.use(cors({
-  origin: "http://localhost:3000", // React frontend
+  origin: "https://laddhatravels.netlify.app", // React frontend
   methods: ["GET", "POST"],
   credentials: true,
 }));
