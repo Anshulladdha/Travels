@@ -26,7 +26,7 @@ const Enquiry = () => {
 
     try {
       // Send form data to the backend API
-      const response = await fetch("http://localhost:8000/api/enquiry", {
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/enquiry`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
