@@ -48,7 +48,8 @@ app.post("/api/enquiry", async (req, res) => {
 
     res.status(200).json({ message: "Enquiry submitted and email sent!" });
   } catch (error) {
-    console.error("❌ Enquiry Error:", error);
+    console.error("❌ Enquiry Error:", error.message);
+     console.error(error.stack);  
     res.status(500).json({ message: "Internal Server Error" });
   }
 });
