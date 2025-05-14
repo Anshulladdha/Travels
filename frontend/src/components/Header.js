@@ -24,7 +24,7 @@ const Header = () => {
         <div className="container-fluid navbar-content">
           {/* Brand Title */}
           <div className="logo-container">
-            <h2 className="brand-title">Laddha Travels</h2>
+            <h2 className="brand-title">Shree Kotri Shyam Tour & Travels</h2>
           </div>
 
           {/* Navigation Menu */}

@@ -19,7 +19,7 @@ const Footer = () => {
           <FaGithub />
           
         </a>
-        <h2 className="copyright">© Laddha Tour & Travels</h2>
+        <h2 className="copyright">© Shree Kotri Shyam Tour & Travels</h2>
       </div>
       
     </div>
