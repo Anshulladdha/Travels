@@ -1,13 +1,17 @@
-import React from "react";
-import { NavLink,} from "react-router-dom";
-// import { useAuth } from "../context/auth";
-// import { ROUTES } from "../utilities/constants";
-// import { toast } from "react-toastify";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 import "../styles/Header.css";
 
-
-
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+ 
+  useEffect(() => {
+  document.body.style.overflow = menuOpen ? "hidden" : "auto";
+}, [menuOpen]);
+
+
   return (
     <>
       {/* Top Contact Bar */}
@@ -19,27 +23,27 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main Navbar */}
-      <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container-fluid navbar-content">
-          {/* Brand Title */}
-          <div className="logo-container">
-            <h2 className="brand-title">Shree Kotri Shyam Tour & Travels</h2>
+      {/* Navbar */}
+      <nav className="navbar">
+        <div className="navbar-container">
+          <h2 className="brand-title">Shree Kotri Shyam Tour & Travels</h2>
+           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
           </div>
 
-          {/* Navigation Menu */}
-          <div className="nav-menu">
-            <NavLink to="/" className="nav-link">Home</NavLink>
-            <NavLink to="/about-us" className="nav-link">About Us</NavLink>
-            <NavLink to="/vehicles" className="nav-link">Our Vehicles</NavLink>
-            <NavLink to="/enquiry" className="nav-link">Enquiry</NavLink>
-            <NavLink to="/contact-us" className="nav-link">Contact Us</NavLink>
+          <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+            <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+            <NavLink to="/about-us" onClick={() => setMenuOpen(false)}>About Us</NavLink>
+            <NavLink to="/vehicles" onClick={() => setMenuOpen(false)}>Our Vehicles</NavLink>
+            <NavLink to="/enquiry" onClick={() => setMenuOpen(false)}>Enquiry</NavLink>
+            <NavLink to="/contact-us" onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
           </div>
+
+         
         </div>
       </nav>
     </>
   );
-  
 };
 
 export default Header;
