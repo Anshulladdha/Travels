@@ -14,6 +14,7 @@ const Home = () => {
 
 
   return (
+    <div className="home-background">
     <div className="container mx-auto px-4 text-center">
       <h2 className="text-2xl font-bold mt-8">
         OUR VEHICLES <span className="text-red-600">RANGE</span>
@@ -31,15 +32,17 @@ const Home = () => {
       <div className="mt-12 px-4 text-left  mx-auto">
         <h2 className="text-2xl font-semibold">Shree Kotri Shyam Tour & Travels</h2>
         <p className="mt-4 text-sm">
-        Welcome to "Shree Kotri Shyam Tour & Travels",the official website of Shree Kotri Shyam Tour & Travels, where culture echoes, tradition speaks, beauty enthrals and diversity delights.Bounded by the majestic Himalayan ranges in the north and edged by an endless stretch of golden beaches, India is a vivid kaleidoscope of landscapes, magnificent historical sites and royal cities, misty mountain retreats, colourful people, rich cultures and festivities
+       <b>Welcome to Shree Kotri Shyam Tour & Travels</b>. Your trusted travel partner in Rajasthan and beyond! We specialize in comfortable and affordable car rentals, luxury buses, and customized tour packages. Whether you're planning a family trip, a pilgrimage, a wedding event, or a corporate tour, we offer well-maintained vehicles and experienced drivers to make every journey safe, smooth, and memorable.
+
+Discover the beauty of India with us – where every trip is planned with care, comfort, and commitment.
         </p>
 
         <h3 className="text-xl font-semibold mt-6">About Us?</h3>
         <p className="mt-2 text-sm">
-       Shree Kotri Shyam Tour & Travels is wholesale travel and tour marketing company offering a wide range of Inbound related Car Rental from hotel reservations of all budgets, Shree Kotri Shyam Tour & Travels is wholesale travel and tour marketing company offering a wide range of Inbound related products from hotel reservations of all budgets, India packages, sightseeing options & customized solutions to the travel agents & tour operator markets. We have worldwide tie ups with reputed & professional.read more..
-Shree Kotri Shyam Tour & Travelss is a global business based in Singapore that is focused on providing the highest level of customer service to meet the global traveller’s needs for leisure or business. Shree Kotri Shyam Tour & Travels is a global business based in Singapore that is focused on providing the highest level of customer service to meet the global traveller’s needs for leisure or business.read more..
+       <b>Shree Kotri Shyam Tour & Travels</b> is a trusted name in the travel and tourism industry, known for delivering reliable, affordable, and comfortable travel experiences across Rajasthan and beyond. With a strong commitment to customer satisfaction, we specialize in providing well-maintained vehicles, courteous drivers, and tailor-made travel solutions to suit every need...
         </p>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,0 +1,40 @@
+.contact-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 2rem;
+}
+
+.info-box {
+  flex: 1 1 250px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #4b4b4b;
+  margin-bottom: 0.5rem;
+}
